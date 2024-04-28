@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         listOfAnimal.add(Animal("Zebra","One of the animal that live in forest",R.drawable.img_zebra))
 
         listOfAnimal.add(Animal("Tiger","Animal",R.drawable.img_tiger))
+        listOfAnimal.add(Animal("Tiger","Animal 2",R.drawable.img_tiger))
+        listOfAnimal.add(Animal("Tiger","Animal 3",R.drawable.img_tiger))
 
         adaptor= AnimalsAdaptor(this,listOfAnimal)
         binding.rvAnimals.adapter = adaptor
