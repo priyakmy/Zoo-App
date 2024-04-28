@@ -4,6 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.bundleOf
 import com.example.zooapp.databinding.ActivityMainBinding
 
 
@@ -39,13 +40,13 @@ class MainActivity : AppCompatActivity() {
         listOfAnimal.add(Animal("Tiger", "Animal 3", R.drawable.img_tiger))
         listOfAnimal.add(Animal("Tiger", "Animal 4", R.drawable.img_tiger))
         listOfAnimal.add(Animal("Tiger", "Animal 5", R.drawable.img_tiger))
-        binding.rvAnimals.adapter = AnimalAdapter(listOfAnimal) {
-
+        binding.rvAnimals.adapter = AnimalAdapter( listOfAnimal) { data ->
             val intent = Intent(this, animaldetailsaction::class.java)
+            val bundle  = bundleOf("ANIMAL" to data)
+            intent.putExtras(bundle)
             startActivity(intent)
 
         }
-
     }
 }
 
