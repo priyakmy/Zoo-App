@@ -12,7 +12,7 @@ import com.example.zooapp.databinding.AnimalTicketBinding
 
 
 class MainActivity : AppCompatActivity() {
-    var listOfAnimal= ArrayList<Animal>()
+    private var listOfAnimal= ArrayList<Animal>()
     var adaptor:AnimalsAdaptor?=null
     lateinit var binding:ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
