@@ -13,7 +13,7 @@
         android:theme="@style/Theme.ZooApp"
         tools:targetApi="31">
         <activity
-            android:name=".animaldetailsaction"
+            android:name=".Animaldetailsaction_Activity"
             android:exported="false" />
         <activity
             android:name=".AnimalDetailAction"

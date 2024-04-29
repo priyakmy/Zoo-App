@@ -1,7 +1,5 @@
 package com.example.zooapp
 
-import android.app.Activity
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -9,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.zooapp.databinding.AnimalTicketBinding
 
 
-class AnimalAdapter(private val data:List<Animal>, private val onClick:(Animal)->Unit) : RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {
+class AnimalAdapter(private val data:List<Animal>, val onClick:(Animal)->Unit) : RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder>() {
 
 
     inner class AnimalViewHolder(val binding:AnimalTicketBinding) : ViewHolder(binding.root)

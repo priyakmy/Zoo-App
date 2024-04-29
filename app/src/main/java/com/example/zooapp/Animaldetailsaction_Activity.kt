@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.zooapp.databinding.ActivityAnimaldetailsactionBinding
 
-class animaldetailsaction : AppCompatActivity() {
+class Animaldetailsaction_Activity : AppCompatActivity() {
 
     private lateinit var binding:ActivityAnimaldetailsactionBinding
 
